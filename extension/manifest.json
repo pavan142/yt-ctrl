@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube Control",
+  "description": "Facilitates Easy Download of Torrents from proxy pirate bay sites",
+  "version": "1.0.0",
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["content.js"]
+  }],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": "/icons/png/youtube.png"
+  }
+}
